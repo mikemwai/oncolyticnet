@@ -1,18 +1,25 @@
 import os
-import tensorflow as tf
 import numpy as np
-from tensorflow.keras.preprocessing import image
 from PIL import Image
 import cv2
-from keras.models import load_model
 from flask import Flask, request, render_template
 from werkzeug.utils import secure_filename
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Input, Flatten, Dense, Dropout
+from tensorflow.keras.applications.vgg19 import VGG19
 
 
+base_model = VGG19(include_top=False, input_shape=(240,240,3))
+x = base_model.output
+flat=Flatten()(x)
+class_1 = Dense(4608, activation='relu')(flat)
+drop_out = Dropout(0.2)(class_1)
+class_2 = Dense(1152, activation='relu')(drop_out)
+output = Dense(2, activation='softmax')(class_2)
+model_03 = Model(base_model.inputs, output)
+model_03.load_weights('vgg_unfrozen.h5')
 app = Flask(__name__)
 
-
-#model =load_model('BrainTumor10Epochs.h5')
 print('Model loaded. Check http://127.0.0.1:5000/')
 
 
@@ -26,11 +33,12 @@ def get_className(classNo):
 def getResult(img):
     image=cv2.imread(img)
     image = Image.fromarray(image, 'RGB')
-    image = image.resize((64, 64))
+    image = image.resize((240, 240))
     image=np.array(image)
     input_img = np.expand_dims(image, axis=0)
-    result=model.predict_classes(input_img)
-    return result
+    result=model_03.predict(input_img)
+    result01=np.argmax(result,axis=1)
+    return result01
 
 
 @app.route('/', methods=['GET'])
