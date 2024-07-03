@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Oncolyticnet</title>
+    <link rel="icon" href="{{ url_for('static', filename='logo.png') }}">
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
     <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
@@ -15,7 +16,7 @@
 <body>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Oncolyticnet</a>
+            <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='logo.png') }}" class="navbar-brand" style="height: 50px; margin-right: 5px;">Oncolyticnet</a>
         </div>
     </nav>
 
