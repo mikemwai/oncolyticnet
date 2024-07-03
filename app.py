@@ -16,7 +16,7 @@ drop_out = Dropout(0.2)(class_1)
 class_2 = Dense(1152, activation='relu')(drop_out)
 output = Dense(2, activation='softmax')(class_2)
 model_03 = Model(base_model.inputs, output)
-model_03.load_weights('./vgg_unfrozen.h5')
+model_03.load_weights('./vgg19_model_02.h5')
 app = Flask(__name__)
 
 print('Model loaded. Check http://127.0.0.1:5000/')
