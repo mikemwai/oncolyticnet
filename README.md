@@ -4,11 +4,31 @@ An Automated Cancer Diagnostics Machine Learning model
 
 ## Installation
 
-- Install project dependencies on your virtual environment:
+Install project dependencies on your virtual environment:
 
 ```sh
     pip install -r requirements.txt
 ```
+
+## Usage
+
+- Run the following command to start the application:
+
+  - On Windows:
+
+    ```sh
+        set FLASK_APP=app.py
+        flask run
+    ```
+
+  - On Unix/Linux/Mac:
+
+    ```sh
+        export FLASK_APP=app.py
+        flask run
+    ```
+
+- This will start a development server on http://127.0.0.1:5000/ where you can access the application.
 
 ## Dataset
 
