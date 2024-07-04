@@ -1,0 +1,7 @@
+flask
+numpy
+pillow
+opencv-python
+Werkzeug
+tensorflow
+jupyter
