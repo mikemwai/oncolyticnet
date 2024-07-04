@@ -5,3 +5,5 @@ opencv-python
 Werkzeug
 tensorflow
 jupyter
+pandas
+
