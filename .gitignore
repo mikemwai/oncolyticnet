@@ -1,3 +1,8 @@
 /.venv/
+/venv/
 /.idea/
-/__pycache__/
+/augmented_data/
+/dataset/
+/images/
+/.ipynb_checkpoints/
+/random_images/
