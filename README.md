@@ -33,7 +33,8 @@ Install project dependencies on your virtual environment:
 ## Dataset
 
 The dataset used for this project can be downloaded [here](https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection) or extract it from [here](dataset.zip).
-An additional dataset for image validation was downloaded from [here](https://www.kaggle.com/datasets/pankajkumar2002/random-image-sample-dataset?resource=download)
+An additional dataset for image validation was downloaded from [here](https://www.kaggle.com/datasets/pankajkumar2002/random-image-sample-dataset?resource=download).
+The VGG19 model can be downloaded [here](https://drive.google.com/drive/folders/1NRUbyFtGFtVBXen4beog_zjSY5mljDed), and the image validation model from [here](https://drive.google.com/drive/folders/1AJeFVIDUZvvbtH9iNxcm4PT5nBoyWEjL)
 
 ## License
 
