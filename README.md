@@ -1,6 +1,6 @@
 # Oncolyticnet
 
-This project develops a machine learning system for detecting brain tumors from MRI scans using the VGG-19 architecture with transfer learning and data augmentation techniques to fine-tune a pre-trained model, enabling accurate and reliable brain tumor detection.
+This project aims to develop a machine learning model for detecting brain tumors from MRI scans using the VGG-19 architecture with transfer learning and data augmentation techniques to fine-tune the pre-trained model, enabling accurate and reliable brain tumor detection.
 
 ## Installation
 
