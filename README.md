@@ -36,7 +36,7 @@ Install project dependencies on your virtual environment:
   
 - An additional dataset for image validation was downloaded from [here](https://www.kaggle.com/datasets/pankajkumar2002/random-image-sample-dataset?resource=download).
   
-- The image validation model can be downloaded from [here](https://drive.google.com/drive/folders/1AJeFVIDUZvvbtH9iNxcm4PT5nBoyWEjL).
+- The image validation model and detection model can be downloaded from [here](https://drive.google.com/drive/folders/1AJeFVIDUZvvbtH9iNxcm4PT5nBoyWEjL).
 
 ## License
 
