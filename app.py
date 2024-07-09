@@ -25,12 +25,14 @@ model_03.load_weights('vgg_unfrozen.h5')
 
 print('Model loaded. Check http://127.0.0.1:5000/')
 
+
 def is_brain_mri(img_path):
     img = image.load_img(img_path, target_size=(150, 150))
     img_array = image.img_to_array(img)
     img_array = np.expand_dims(img_array, axis=0) / 255.0
     prediction = validation_model.predict(img_array)
     return prediction[0][0] > 0.5
+
 
 def get_className(classNo):
     if classNo == 0:
@@ -51,6 +53,7 @@ def getResult(img_path):
     result = model_03.predict(input_img)
     result01 = np.argmax(result, axis=1)
     return get_className(result01[0])
+
 
 @app.route('/', methods=['GET'])
 def index():
@@ -73,7 +76,6 @@ def upload():
 
         return result
     return None
-
 
 
 if __name__ == '__main__':
