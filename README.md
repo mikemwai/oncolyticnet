@@ -4,11 +4,18 @@ This project aims to develop a machine learning model for detecting brain tumors
 
 ## Installation
 
-Install project dependencies on your virtual environment:
-
-```sh
+1. Clone the repository:
+    ```
+    git clone https://github.com/mikemwai/oncolyticnet.git
+    ```
+2. Navigate to the project directory:
+    ```
+    cd oncolyticnet
+    ```
+3. Install the required packages:
+    ```
     pip install -r requirements.txt
-```
+    ```
 
 ## Usage
 
@@ -37,6 +44,20 @@ Install project dependencies on your virtual environment:
 - An additional dataset for image validation was downloaded from [here](https://www.kaggle.com/datasets/pankajkumar2002/random-image-sample-dataset?resource=download).
   
 - The image validation model and detection model can be downloaded from [here](https://drive.google.com/drive/folders/1AJeFVIDUZvvbtH9iNxcm4PT5nBoyWEjL).
+
+## Contributions
+
+If you'd like to contribute to this project:
+
+- Please fork the repository.
+- Create a new branch for your changes.
+- Submit a [pull request](https://github.com/mikemwai/oncolyticnet/pulls).
+
+Contributions, bug reports, and feature requests are welcome!
+
+## Issues
+
+If you have any issues with the project, feel free to open up an [issue](https://github.com/mikemwai/oncolyticnet/issues).
 
 ## License
 
