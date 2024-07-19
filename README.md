@@ -43,7 +43,7 @@ This project aims to develop a machine learning model for detecting brain tumors
   
 - An additional dataset for image validation was downloaded from [here](https://www.kaggle.com/datasets/pankajkumar2002/random-image-sample-dataset?resource=download).
   
-- The image validation model and detection model can be downloaded from [here](https://drive.google.com/drive/folders/1AJeFVIDUZvvbtH9iNxcm4PT5nBoyWEjL).
+- The image validation model and detection model can be downloaded from [here](https://drive.google.com/drive/folders/1300P6O28YW1X2c6jmZ5Nai7jhdLcnIZT?usp=sharing).
 
 ## Contributions
 
